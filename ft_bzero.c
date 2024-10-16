@@ -17,6 +17,8 @@ void	ft_bzero(void *src, size_t n)
 	char	*dest;
 
 	dest = src;
+	if (!src)
+		return ;
 	while (n)
 	{
 		*dest++ = 0;

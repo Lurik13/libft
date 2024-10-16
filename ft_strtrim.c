@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	suffixe;
 	char	*str;
 
+	if (!s1 || !set)
+		return (NULL);
 	str = 0;
 	if (s1 && set)
 	{
